@@ -39,7 +39,7 @@ jobs:
     - name: Check Out Repo
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
-        git clone https://git.mills.io/prologic/tube
+        git clone https://github.com/shindouj/tube.git
 
     - name: login into github package registry
       if: steps.cache.outputs.cache-hit != 'true'
